@@ -15,7 +15,7 @@ async function bootstrap() {
     whitelist: true
   }));
   app.setGlobalPrefix("/api/v1");
-  await app.listen(process.env.PORT ?? 3000, '0.0.0.0');
+  await app.listen(process.env.PORT ?? 4000, '0.0.0.0');
   logger.log(`App listening on ${await app.getUrl()}`);
 }
 bootstrap();
